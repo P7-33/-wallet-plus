@@ -1,7 +1,7 @@
 window.ethParser = require('eth-url-parser');
 
 let paramFields = [];
-const BASE_URL = 'https://metamask.app.link';
+const BASE_URL = 'https://Wallet Plus.app.link';
 window.addNewParam = function() {
 	const ts = Date.now();
 
