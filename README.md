@@ -1,3 +1,5 @@
+# WALLET PLUS
+
 # JSONStream
 
 streaming JSON.parse and stringify
