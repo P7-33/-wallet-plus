@@ -77,3 +77,5 @@ boards/swervolf/fusesoc_libraries/
 
 # ESP C3 temp hex
 boards/esp32-c3-devkitM-1/binary.hex
+#$ gh secret set CERTIFICATE_BASE64 < cert.base64
+✓ Set secret CERTIFICATE_BASE64 for octocat/octorepo
