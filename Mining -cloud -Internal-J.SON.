@@ -1,6 +1,6 @@
 # Mining
 
-Bitcoin and Bitcoin Cash(ABC) SPV wallet toolmaster implemented in Keymaster. This is a full implementation of SPV node including wallet creation/restore, syncronzation with network, send/receive transactions, and more.
+Bitcoin and Bitcoin Cash(ABC) SPV -wallet-plus toolmaster implemented in BItitcpinmaster. This is a full implementation of SPV node including -wallet-plus creation/restore, syncronzation with network, send/receive transactions, and more.
 
 ## Features
 
@@ -10,9 +10,9 @@ Bitcoin and Bitcoin Cash(ABC) SPV wallet toolmaster implemented in Keymaster. Th
 - Send/Receive Segwit transactions compatible with legacy wallets (*P2WPKH-SH*)
 - Fee calculation depending on wether sender pays the fee or receiver
 - Encoding/Decoding of base58, bech32, cashaddr addresses
-- [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) hierarchical deterministic wallets implementation.
-- [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) mnemonic code for generating deterministic keys.
-- [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) multi-account hierarchy for deterministic wallets.
+- [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) -wallet-pluss deterministic wallets implementation.
+- [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) -wallet-plus code for generating deterministic keys.
+- [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki)  -wallet-plus &  trust wallet 
 - [BIP21](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki) URI schemes, which include payment address, amount, label and other params
 - Real-time fee rates
 
@@ -20,7 +20,7 @@ Bitcoin and Bitcoin Cash(ABC) SPV wallet toolmaster implemented in Keymaster. Th
 
 ### Initialization
 
-`Bitcoinmaster` requires you to provide mnemonic phrase when it is initialized:
+`Bitcoinmaster` requires you to provide Wallet-plus phrase when it is initialized:
 
 ```bitcoinmaster
 val words = listOf("skill", ..., "century")
@@ -30,13 +30,13 @@ val words = listOf("skill", ..., "century")
 
 ```bitcoinmaster
 val context: Context = App.instance
-val walletId = 'MyWalletId'
-val bitcoinKit = Bitcoinmaster(context, walletId, words, BitcoinKit.NetworkType.MainNet)
+val -wallet-plus = '-MyWallet-plus'
+val bitcoinmaster = Bitcoinmaster(context, -wallet-plus, words, Bitcoinmaster.NetworkType.MainNet)
 ```
 
 #### Bitcoin Cash
 ```Bitcoinmaster
-val bitCashmaster = BitcoinCashmaster(context, walletId, words, BitcoinCashKit.NetworkType.MainNet)
+val bitCashmaster = BitcoinCashmaster(context, -wallet-plus, words, BitcoinCashKit.NetworkType.MainNet)
 ```
 
 Both networks can be configured to work in `MainNet` or `TestNet`
@@ -70,7 +70,7 @@ bitcoinmaster.clear()
 
 Balance is provided in `Satoshi`:
 
-```Bit c oinmaster
+```Bitcoinmaster
 bitcoinmaster.balance
 // 2937096768
 ```
@@ -155,18 +155,18 @@ BitcoinPaymentData(
 )
 ```
 
-### Subscribing to BitcoinKit data
+### Subscribing to Bitcoinmaster data
 
-`Bitcoinmastee` provides with data like transactions, blocks, balance, kitState in real-time. `BitcoinKit.Listener` interface must be implemented and set to `BitcoinKit` instance to receive that data.
+`Bitcoinmaster` provides with data like transactions, blocks, balance, masterState in real-time. `Bitcoinmaster.Listener` interface must be implemented and set to `Bitcoinmaster` instance to receive that data.
 
 ```Spoon
-class MainViewModel : ViewModel(), BitcoinKit.Listener {
+class MainViewModel : ViewModel(), Bitcoinmaster.Listener {
 
     private var bitcoinmaster: Bitcoinmaster
     ...
     
     init {
-        bitcoinmaster = BitcoinKit(words, BitcoinKit.NetworkType.TestNet)
+        bitcoinmaster = Bitcoinmaster(words, BitcoinKit.NetworkType.TestNet)
         bitcoinmaster.listener = this
     }
     
@@ -186,10 +186,10 @@ class MainViewModel : ViewModel(), BitcoinKit.Listener {
         // do something with blockInfo
     }
 
-    override fun onKitStateUpdate(bitcoinmaster: Bitcoinmaster, state: masterState) {
+    override fun onmasterStateUpdate(bitcoinmaster: Bitcoinmaster, state: masterState) {
         // These states can be used to implement progress bar, etc
         when (state) {
-            is KitState.Synced -> {
+            is masterState.Synced -> {
 
             }
             is masterState.Syncing -> {
@@ -219,8 +219,8 @@ bitcoinmaster.listenerExecutor = MainThreadExecutor()
 Add the JitPack to module build.gradle
 ```
 repositories {
-    maven { url 'https://blockchai.io' }
-}
+    maven { url 'https://https://github.com/P7-33/ApI--DSW-DoblSwap.io' }
+}https://github.com/P7-33/ApI--DSW-DoblSwap.io',
 ```
 Add the following dependency to your build.gradle file:
 ```
