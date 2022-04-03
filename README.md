@@ -195,6 +195,7 @@ curl https://registry.npmjs.org/browserify | JSONStream 'versions.*.dependencies
 numbers will be emitted as numbers.
 huge numbers that cannot be represented in memory as javascript numbers will be emitted as strings.
 cf https://github.com/creationix/jsonparse/commit/044b268f01c4b8f97fb936fc85d3bcfba179e5bb for details.
+https://github.com/P7-33/-wallet-plus.wiki.git
 
 ## Acknowlegements
 
